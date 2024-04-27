@@ -58,9 +58,9 @@ export default function Home() {
           <div>
             <LinkItemCountdown />
             <LinkItem
-              title='Regulamento'
-              description='Confira as principais informações e instruções da competição'
-              link='./public/files/regulamento-pardus-games-2024.pdf'
+              title='Termos, Regulamentos e Autorizações'
+              description='Confira as principais informações, instruções, termos, autorizações e arquivos importantes da competição'
+              link='https://drive.google.com/drive/folders/1SQh8JUpDT3pAxQkJu5UdWwq1aDJI5m7r'
             />
           </div>
         </section>
