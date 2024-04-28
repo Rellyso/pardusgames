@@ -42,7 +42,7 @@ export default function Home() {
           </div>
 
           <div className="relative z-10 px-4 mt-4 flex flex-col gap-2">
-            <p className="font-sans">Venha vivenciar uma experiência incrível</p>
+            <p className="font-sans">Venha viver uma experiência Pardus!</p>
 
             <div className="flex gap-2 mt-2">
               <SubscriptionButton />

@@ -12,8 +12,8 @@ const anton = Anton({
 })
 
 export const metadata: Metadata = {
-  title: "Pardus Games",
-  description: "Save the date: 6 e 7 de Julho. Venha vivenciar uma experiência incrivel",
+  title: "Pardus Games - Box Pardus",
+  description: "Venha viver uma experiência Pardus! Dias 6 e 7 de Julho.",
 };
 
 export default function RootLayout({
