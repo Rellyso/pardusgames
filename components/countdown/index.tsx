@@ -7,12 +7,9 @@ interface ICountdownProps {
   className?: string
 }
 
-const SUBSCRIPTION_DATE = new Date('2024-05-12T15:00:00.000Z')
 
 export function Countdown({ className }: ICountdownProps) {
   const {
-    isAfterDate,
-    currentSeconds,
     hoursAmount,
     minutesAmount,
     secondsAmount
