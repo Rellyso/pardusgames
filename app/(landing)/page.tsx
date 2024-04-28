@@ -30,7 +30,7 @@ export default function Home() {
             />
           </div>
           <div className="relative z-10 px-4 uppercase">
-            <p className="font-title text-base">DIA 6 e 7 de Julho</p>
+            <p className="font-title text-base">DIAS 6 e 7 de Julho</p>
             <div className="flex items-center gap-2">
               <h1 className="font-title text-4xl">PARDUS GAMES</h1>
               <Image
