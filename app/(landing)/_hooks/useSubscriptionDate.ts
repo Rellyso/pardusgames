@@ -9,7 +9,7 @@ const TIME_COUNT = {
 }
 
 
-const SUBSCRIPTION_DATE = new Date('2024-05-12T15:00:00.000Z')
+const SUBSCRIPTION_DATE = new Date('2024-04-28T15:00:00.000Z')
 
 export const useSubscriptionDate = () => {
   const [currentSeconds, setCurrentSeconds] = useState(0)

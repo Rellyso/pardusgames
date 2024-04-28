@@ -13,8 +13,8 @@ export const SubscriptionButton = () => {
       <Button
         pill
         disabled={!isAfterDate}
-        variant='outline'
-        className='uppercase font-title text-white tracking-wide'
+        variant={isAfterDate ? 'default' : 'outline'}
+        className='uppercase font-title font-normal tracking-wide'
       >
         {isAfterDate
           ? <>Inscreva-se</>

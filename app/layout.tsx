@@ -3,6 +3,8 @@ import localFont from "next/font/local";
 import { Anton, Inter } from "next/font/google";
 import "./globals.css";
 import { GoogleAnalytics } from '@next/third-parties/google'
+import { Footer } from "@/components/footer";
+import { Header } from "@/components/header";
 
 const inter = Inter({ subsets: ["latin"], variable: '--font-inter', });
 const pfDIN = localFont({ src: '../fonts/PFDIN_compressed_bold.otf', variable: '--font-pfdin', });
@@ -24,7 +26,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body className={`${inter.variable} ${pfDIN.variable} ${anton.variable} font-sans`}>{children}</body>
+      <body
+        className={`${inter.variable} ${pfDIN.variable} ${anton.variable} font-sans`}
+      >
+        <div className="min-h-full w-full flex flex-col bg-slate-50">
+          <Header />
+          <main className="flex-1 bg-black">
+            {children}
+          </main>
+          <Footer />
+        </div>
+      </body>
       <GoogleAnalytics gaId={process.env.GOOGLE_ANALYTICS_ID || ""} />
     </html>
   );
