@@ -32,9 +32,9 @@ export default function RootLayout({
         <body
           className={`${inter.variable} ${pfDIN.variable} ${anton.variable} font-sans`}
         >
-          <div className="min-h-full w-full flex flex-col bg-slate-50">
+          <div className="min-h-full w-full bg-black flex flex-col justify-center">
             <Header />
-            <main className="flex-1 bg-black">
+            <main className="w-full flex-1 bg-black flex flex-col self-center">
               {children}
             </main>
             <Footer />
