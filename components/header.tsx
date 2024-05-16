@@ -4,6 +4,7 @@ import Image from "next/image"
 import { Button } from "./ui/button"
 import { WhatsappLogo } from '@phosphor-icons/react'
 import Link from "next/link"
+import { sendGAEvent } from '@next/third-parties/google'
 
 export const Header = () => {
   return (
@@ -19,9 +20,19 @@ export const Header = () => {
           />
         </span>
 
-        <Button asChild variant='link' className="text-white text-2xl h-12 w-12 p-0 hover:bg-zinc-700 rounded-full">
-          <Link href="https://wa.me/+558488995994" target="_blank" rel="noopener">
-            <WhatsappLogo />
+        <Button
+          asChild
+          onClick={() => sendGAEvent({ event: 'contato', value: 'whatsapp' })}
+          variant='link'
+          className="text-white text-sm p-2 hover:bg-zinc-700 rounded-full"
+        >
+          <Link
+            href="https://wa.me/+558488995994"
+            target="_blank"
+            rel="noopener"
+            className='decoration-transparent space-x-2'
+          >
+            <span>Entre em contato</span> <WhatsappLogo className="text-2xl" />
           </Link>
         </Button>
       </header>
