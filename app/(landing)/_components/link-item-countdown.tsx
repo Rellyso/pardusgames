@@ -9,7 +9,7 @@ export const LinkItemCountdown = () => {
   const { isAfterDate } = useSubscriptionDate()
 
   const description = isAfterDate
-    ? 'Primeiro lote disponível até 12 de maio'
+    ? 'Primeiro lote disponível até 19 de maio'
     : <>Inscreva-se em <Countdown className="inline" /></>
 
   return (
