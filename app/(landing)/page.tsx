@@ -52,6 +52,11 @@ export default function Home() {
             description='Confira as instruções e detalhes da prova 2'
             link='https://drive.google.com/file/d/1i4vsG0ZpLEmYvMQZMUt_AAAmYoL-zpeh/view'
           />
+          <LinkItem
+            title='PROVA 3 - GRIP BURNING'
+            description='Confira as instruções e detalhes da prova 3'
+            link='https://drive.google.com/file/d/1gQwDp_yA4cocCmF5YWZ-y1ywKccLPLnf/view'
+          />
         </div>
       </section>
 
