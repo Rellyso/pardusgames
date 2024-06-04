@@ -69,6 +69,11 @@ export default function Home() {
             description='Confira as principais informações, instruções, termos, autorizações e arquivos importantes da competição'
             link='https://drive.google.com/drive/folders/1SQh8JUpDT3pAxQkJu5UdWwq1aDJI5m7r'
           />
+          <LinkItem
+            title='Seleção de Judges e Staffs'
+            description='Inscreva-se na seleção de Judges e Staffs'
+            link='https://docs.google.com/forms/d/e/1FAIpQLSdJwDRmzzEfQaCmGdBe0ZSwrmLB-QjHa4nLwUWWFp8v8YZbTg/viewform'
+          />
         </div>
       </section>
     </>
