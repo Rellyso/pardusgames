@@ -48,6 +48,11 @@ export default function Home() {
         <h2 className="text-4xl mb-8 font-title">WORKOUTS 🔥</h2>
         <div>
           <LinkItem
+            title='PROVA 1 - JUST GO'
+            description='Confira as instruções e detalhes da primeira prova'
+            link='https://drive.google.com/file/d/1hX2XyWscUxp0r0v-gB3UulWg3sMoRMyd/view'
+          />
+          <LinkItem
             title='PROVA 2 - BALLS AND SHOTS'
             description='Confira as instruções e detalhes da prova 2'
             link='https://drive.google.com/file/d/1i4vsG0ZpLEmYvMQZMUt_AAAmYoL-zpeh/view'
