@@ -62,6 +62,11 @@ export default function Home() {
             description='Confira as instruções e detalhes da prova 3'
             link='https://drive.google.com/file/d/1gQwDp_yA4cocCmF5YWZ-y1ywKccLPLnf/view'
           />
+          <LinkItem
+            title='PROVA 4 - LAST GAS'
+            description='Confira as instruções e detalhes da prova 4'
+            link='https://drive.google.com/file/d/1QMugAn-4mV8wXwp4FwhhPzAJXGXmUbjD/view'
+          />
         </div>
       </section>
 
