@@ -70,6 +70,32 @@ export default function Home() {
         </div>
       </section>
 
+      <section id='floor-plans' className="p-4 my-12 max-w-screen-lg w-full self-center">
+        <h2 className="text-4xl mb-8 font-title">FLOOR PLANS 🌱</h2>
+        <div>
+          <LinkItem
+            title='FLOOR PLAN PROVA 1'
+            description='Confira a planta da prova 1'
+            link='https://drive.google.com/file/d/1lAgb8EuC0YN6yM6h8vBFF1kV-Otzvyhc/view'
+          />
+          <LinkItem
+            title='FLOOR PLAN PROVA 2'
+            description='Confira a planta da prova 2'
+            link='https://drive.google.com/file/d/1ETwKza2n5WlKtttYklf7AHpTmIvuCXUI/view'
+          />
+          <LinkItem
+            title='FLOOR PLAN PROVA 3'
+            description='Confira a planta da prova 3'
+            link='https://drive.google.com/file/d/12vbS5ubfLfdQrK3w2clz5WbcbKGZvnpV/view'
+          />
+          <LinkItem
+            title='FLOOR PLAN PROVA 4'
+            description='Confira a planta da prova 4'
+            link='https://drive.google.com/file/d/1yJeDXsSPYqKeBxFcduKX0FEoMU2zPrpi/view'
+          />
+        </div>
+      </section>
+
       <section id='materiais' className="p-4 my-12  w-full max-w-screen-lg self-center">
         <h2 className="text-4xl mb-8 font-title">MATERIAIS</h2>
         <div>
