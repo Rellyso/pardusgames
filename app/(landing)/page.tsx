@@ -37,8 +37,8 @@ export default function Home() {
 
           <div className="flex gap-2 mt-2">
             <SubscriptionButton />
-            <Link href='#materiais'>
-              <Button pill variant='outline' className='font-title uppercase'>Saiba mais</Button>
+            <Link href='#provas'>
+              <Button pill variant='outline' className='font-title uppercase'>Provas</Button>
             </Link>
           </div>
         </div>
@@ -92,6 +92,17 @@ export default function Home() {
             title='FLOOR PLAN PROVA 4'
             description='Confira a planta da prova 4'
             link='https://drive.google.com/file/d/1yJeDXsSPYqKeBxFcduKX0FEoMU2zPrpi/view'
+          />
+        </div>
+      </section>
+
+      <section id='cronograma' className="p-4 my-12  w-full max-w-screen-lg self-center">
+        <h2 className="text-4xl mb-8 font-title">CRONOGRAMA</h2>
+        <div>
+          <LinkItem
+            title='Cronograma dia 01'
+            description='Confira horários, baterias e raias da sua equipe'
+            link='https://drive.google.com/file/d/1E7fFhS7oNuOpiMB3U84Z5kQAQBhbgVG1/view'
           />
         </div>
       </section>

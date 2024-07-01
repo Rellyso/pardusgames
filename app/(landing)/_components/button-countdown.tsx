@@ -9,7 +9,7 @@ export const SubscriptionButton = () => {
   const { isAfterDate } = useSubscriptionDate()
 
   return (
-    <Link href={isAfterDate ? 'https://inscricoes.wodengage.games/eventos/pardus-games' : ''}>
+    <Link href={isAfterDate ? '#cronograma' : ''}>
       <Button
         pill
         disabled={!isAfterDate}
@@ -17,7 +17,7 @@ export const SubscriptionButton = () => {
         className='uppercase font-title font-normal tracking-wide'
       >
         {isAfterDate
-          ? <>Inscreva-se</>
+          ? <>Acesse o cronograma</>
           : <span>
             Inscreva-se em {' '}
             <Countdown />
