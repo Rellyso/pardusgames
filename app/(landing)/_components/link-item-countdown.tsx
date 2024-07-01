@@ -9,13 +9,13 @@ export const LinkItemCountdown = () => {
   const { isAfterDate } = useSubscriptionDate()
 
   const description = isAfterDate
-    ? '2° lote disponível até 15 de junho'
+    ? 'Inscrições encerradas'
     : <>Inscreva-se em <Countdown className="inline" /></>
 
   return (
     <LinkItem
       title='Inscrições'
-      disabled={!isAfterDate}
+      disabled
       description={description}
       link='https://inscricoes.wodengage.games/eventos/pardus-games'
     />
