@@ -102,7 +102,7 @@ export default function Home() {
           <LinkItem
             title='Cronograma dia 01'
             description='Confira horários, baterias e raias da sua equipe'
-            link='https://drive.google.com/file/d/1E7fFhS7oNuOpiMB3U84Z5kQAQBhbgVG1/view'
+            link='https://drive.google.com/file/d/1B3R5oCPX1U6SdDA3op7fpqUz2v6tOhrl/view'
           />
         </div>
       </section>
