@@ -19,7 +19,7 @@ export default function Home() {
         </div>
         <div className="relative z-10 px-4 uppercase w-full max-w-screen-lg self-center flex items-center flex-col">
           <div className="flex items-center gap-2">
-            <h1 className="font-title text-6xl text-theme-primary">OBRIGADO, ATLETAS!</h1>
+            <h1 className="font-title text-6xl text-center text-theme-primary">OBRIGADO, ATLETAS!</h1>
           </div>
         </div>
 
