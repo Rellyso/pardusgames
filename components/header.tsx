@@ -8,7 +8,7 @@ import { sendGAEvent } from '@next/third-parties/google'
 
 export const Header = () => {
   return (
-    <div className="w-full flex items-center justify-center bg-black border-theme-border border-b-[1px] sticky top-0 z-30">
+    <div className="w-full h-20 flex items-center justify-center bg-black border-theme-border border-b-[1px] sticky top-0 z-30">
       <header className="w-full max-w-screen-lg flex items-center justify-between mx-4">
 
         <span className="py-4 px-4 h-full flex items-center">
