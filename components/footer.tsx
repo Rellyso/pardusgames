@@ -1,21 +1,21 @@
-import Logo from '@/public/assets/logo.svg'
-import clsx from 'clsx'
-import Image from 'next/image'
+import clsx from "clsx";
+import Image from "next/image";
+import Logo from "@/public/assets/logo.svg";
 
 export function Footer() {
   return (
     <footer
       className={clsx(
-        'relative w-full overflow-hidden min-h-96 flex items-center',
-        'border-t border-theme-border bg-black',
+        "relative w-full overflow-hidden min-h-96 flex items-center",
+        "border-t border-theme-border bg-black",
       )}
     >
       <div className="-translate-1/2 absolute left-1/2 top-full z-0 flex h-24 w-64 items-center justify-center bg-primary blur-full" />
 
       <div
         className={clsx(
-          'relative z-10 mx-auto w-full max-w-screen-xl px-4 py-16 sm:px-8 md:px-16',
-          'flex flex-col items-center justify-between text-zinc-300 md:flex-row md:items-center',
+          "relative z-10 mx-auto w-full max-w-screen-xl px-4 py-16 sm:px-8 md:px-16",
+          "flex flex-col items-center justify-between text-zinc-300 md:flex-row md:items-center",
         )}
       >
         <div className="flex flex-col gap-1 my-4 md:my-0">
@@ -28,7 +28,7 @@ export function Footer() {
 
         <div className="flex flex-col items-center">
           <p className="">
-            Página criada com {'<3'} por{' '}
+            Página criada com {"<3"} por{" "}
             <a
               target="_blank"
               className="underline underline-offset-2 transition-all hover:text-theme-primary"
@@ -40,7 +40,7 @@ export function Footer() {
           </p>
 
           <p className="font-sans">
-            Crie a sua também{' '}
+            Crie a sua também{" "}
             <a
               target="_blank"
               className="underline underline-offset-2 transition-all hover:text-theme-primary"
@@ -53,5 +53,5 @@ export function Footer() {
         </div>
       </div>
     </footer>
-  )
+  );
 }

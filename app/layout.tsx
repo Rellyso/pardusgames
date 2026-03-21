@@ -1,20 +1,23 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
 import { Anton, Inter } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
-import { GoogleAnalytics } from '@next/third-parties/google'
+import { GoogleAnalytics } from "@next/third-parties/google";
+import Script from "next/script";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
-import Script from "next/script";
 import { AppProvider } from "@/providers/app-provider";
 
-const inter = Inter({ subsets: ["latin"], variable: '--font-inter', });
-const pfDIN = localFont({ src: '../fonts/PFDIN_compressed_bold.otf', variable: '--font-pfdin', });
+const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const pfDIN = localFont({
+  src: "../fonts/PFDIN_compressed_bold.otf",
+  variable: "--font-pfdin",
+});
 const anton = Anton({
-  subsets: ['latin'],
-  weight: '400',
-  variable: '--font-anton',
-})
+  subsets: ["latin"],
+  weight: "400",
+  variable: "--font-anton",
+});
 
 export const metadata: Metadata = {
   title: "Pardus Games - Box Pardus",
@@ -27,7 +30,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-br">
+    <html lang="pt-BR">
       <AppProvider>
         <body
           className={`${inter.variable} ${pfDIN.variable} ${anton.variable} font-sans`}
