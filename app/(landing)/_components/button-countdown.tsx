@@ -4,26 +4,31 @@ import Link from "next/link";
 import { Countdown } from "@/components/countdown";
 import { Button } from "@/components/ui/button";
 import { useSubscriptionDate } from "../_hooks/useSubscriptionDate";
+import { SUBSCRIPTION } from "@/constants/subscription";
 
 export const SubscriptionButton = () => {
   const { isAfterDate } = useSubscriptionDate();
 
+  if (isAfterDate) {
+    return (
+      <Link href={SUBSCRIPTION.link}>
+        <Button variant="default" className="uppercase font-semibold">
+          Inscreva-se agora
+        </Button>
+      </Link>
+    );
+  }
+
   return (
-    <Link href={isAfterDate ? "#cronograma" : ""}>
-      <Button
-        pill
-        disabled={!isAfterDate}
-        variant={isAfterDate ? "default" : "outline"}
-        className="uppercase font-title font-normal tracking-wide"
-      >
-        {isAfterDate ? (
-          <>Acesse o cronograma</>
-        ) : (
-          <span>
-            Inscreva-se em <Countdown />
-          </span>
-        )}
-      </Button>
-    </Link>
+    <Button
+      disabled
+      size="lg"
+      variant={isAfterDate ? "default" : "default"}
+      className="uppercase w-50 font-semibold"
+    >
+      <span>
+        Inscreva-se em <Countdown />
+      </span>
+    </Button>
   );
 };

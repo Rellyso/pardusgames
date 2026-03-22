@@ -32,7 +32,7 @@ export function Countdown({ className }: ICountdownProps) {
 
         return (
           <Fragment key={key}>
-            {i !== 0 && <span className="text-theme-primary px-[1px]">:</span>}
+            {i !== 0 && <span className="px-px">:</span>}
             <span>{counterValue[0]}</span>
             <span>{counterValue[1]}</span>
           </Fragment>

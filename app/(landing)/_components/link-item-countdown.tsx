@@ -17,7 +17,7 @@ export const LinkItemCountdown = () => {
 
   return (
     <LinkItem
-      title="Inscrições"
+      title="Lote promocional"
       disabled
       description={description}
       link="https://inscricoes.wodengage.games/eventos/pardus-games"

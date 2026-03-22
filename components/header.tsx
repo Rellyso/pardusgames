@@ -1,15 +1,15 @@
 "use client";
 
 import { sendGAEvent } from "@next/third-parties/google";
-import { WhatsappLogo } from "@phosphor-icons/react";
+import { WhatsappLogoIcon } from "@phosphor-icons/react";
 import Image from "next/image";
 import Link from "next/link";
 import { Button } from "./ui/button";
 
 export const Header = () => {
   return (
-    <div className="w-full h-20 flex items-center justify-center bg-black border-theme-border border-b-[1px] sticky top-0 z-30">
-      <header className="w-full max-w-screen-lg flex items-center justify-between mx-4">
+    <div className="w-full h-20 flex items-center justify-center bg-black border-theme-border border-b sticky top-0 z-30">
+      <header className="w-full max-w-5xl flex items-center justify-between mx-4">
         <span className="py-4 px-4 h-full flex items-center">
           <Image src="/assets/logo.svg" alt="logo" width={75} height={36} />
         </span>
@@ -26,7 +26,7 @@ export const Header = () => {
             rel="noopener"
             className="decoration-transparent space-x-2"
           >
-            <span>Entre em contato</span> <WhatsappLogo className="text-2xl" />
+            <WhatsappLogoIcon className="text-2xl" />
           </Link>
         </Button>
       </header>
