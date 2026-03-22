@@ -87,9 +87,9 @@ export const Header = () => {
             </SheetTrigger>
             <SheetContent>
               <SheetHeader>
-                <SheetTitle>Menu Pardus</SheetTitle>
+                <SheetTitle>Menu</SheetTitle>
                 <SheetDescription>
-                  Navegue rapido pelas secoes principais.
+                  Navegue rapido pelas seções principais.
                 </SheetDescription>
               </SheetHeader>
 
