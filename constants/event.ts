@@ -34,7 +34,7 @@ export const CATEGORIES: EventCategory[] = [
     divisions: ["Trio Feminino", "Trio Masculino"],
   },
   {
-    name: "Intermediario",
+    name: "Intermediário",
     divisions: ["Trio Feminino", "Trio Masculino"],
   },
   {

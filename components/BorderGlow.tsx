@@ -1,10 +1,10 @@
 "use client";
 import {
-  useRef,
-  useCallback,
-  useState,
-  useEffect,
   type ReactNode,
+  useCallback,
+  useEffect,
+  useRef,
+  useState,
 } from "react";
 
 interface BorderGlowProps {
@@ -59,7 +59,7 @@ function buildBoxShadow(glowColor: string, intensity: number): string {
 }
 
 function easeOutCubic(x: number) {
-  return 1 - Math.pow(1 - x, 3);
+  return 1 - (1 - x) ** 3;
 }
 function easeInCubic(x: number) {
   return x * x * x;
@@ -247,7 +247,7 @@ const BorderGlow: React.FC<BorderGlowProps> = ({
       onPointerMove={handlePointerMove}
       onPointerEnter={() => setIsHovered(true)}
       onPointerLeave={() => setIsHovered(false)}
-      className={`relative grid isolate border border-white/15 ${className}`}
+      className={`relative grid isolate overflow-hidden border border-white/15 ${className}`}
       style={{
         background: backgroundColor,
         borderRadius: `${borderRadius}px`,
@@ -258,7 +258,7 @@ const BorderGlow: React.FC<BorderGlowProps> = ({
     >
       {/* mesh gradient border */}
       <div
-        className="absolute inset-0 rounded-[inherit] -z-[1]"
+        className="absolute inset-0 rounded-[inherit] -z-1"
         style={{
           border: "1px solid transparent",
           background: [
@@ -277,7 +277,7 @@ const BorderGlow: React.FC<BorderGlowProps> = ({
 
       {/* mesh gradient fill near edges */}
       <div
-        className="absolute inset-0 rounded-[inherit] -z-[1]"
+        className="absolute inset-0 rounded-[inherit] -z-1"
         style={
           {
             border: "1px solid transparent",
@@ -314,7 +314,7 @@ const BorderGlow: React.FC<BorderGlowProps> = ({
 
       {/* outer glow */}
       <span
-        className="absolute pointer-events-none z-[1] rounded-[inherit]"
+        className="absolute pointer-events-none z-1 rounded-[inherit]"
         style={
           {
             inset: `${-glowRadius}px`,
@@ -337,7 +337,7 @@ const BorderGlow: React.FC<BorderGlowProps> = ({
         />
       </span>
 
-      <div className="flex flex-col relative overflow-auto z-[1]">
+      <div className="relative z-1 flex flex-col overflow-hidden">
         {children}
       </div>
     </div>

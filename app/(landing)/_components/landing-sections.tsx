@@ -100,7 +100,7 @@ export function CategoriesSection() {
   return (
     <section
       id="categorias"
-      className="mx-auto w-full max-w-6xl px-4 py-14 sm:py-20"
+      className="mx-auto w-full max-w-6xl overflow-x-clip px-4 py-14 sm:py-20"
     >
       <SectionTitle title="Categorias" />
       <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
@@ -118,7 +118,7 @@ export function CategoriesSection() {
           >
             <article
               className={`p-4 sm:p-5 ${
-                category.featured ? "shadow-[0_0_0_1px_#e5a800_inset]" : ""
+                category.featured ? "border-primary" : ""
               }`}
             >
               <div className="mb-4 flex items-center justify-between">
@@ -127,7 +127,7 @@ export function CategoriesSection() {
                 </h3>
                 {category.featured ? (
                   <Badge className="rounded-sm text-[10px] tracking-[0.12em]">
-                    MÁX.
+                    EM ALTA
                   </Badge>
                 ) : null}
               </div>
