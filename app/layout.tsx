@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Anton, Barlow_Condensed, Bebas_Neue } from "next/font/google";
+import { Anton, Barlow, Bebas_Neue } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import { GoogleAnalytics } from "@next/third-parties/google";
@@ -13,9 +13,9 @@ const bebas = Bebas_Neue({
   variable: "--font-bebas",
 });
 
-const barlow = Barlow_Condensed({
+const barlow = Barlow({
   subsets: ["latin"],
-  weight: ["400", "500"],
+  weight: ["400", "500", "600"],
   variable: "--font-barlow",
 });
 const pfDIN = localFont({
@@ -29,8 +29,9 @@ const anton = Anton({
 });
 
 export const metadata: Metadata = {
-  title: "PARDUS GAMES",
-  description: "Venha viver uma experiência Pardus! Dias 22 e 23 de Maio.",
+  title: "Pardus Games 2026",
+  description:
+    "Competicao em trio organizada pelo Box Pardus. 23 e 24 de maio de 2026 no SESC Mossoró/RN.",
 };
 
 export default function RootLayout({
