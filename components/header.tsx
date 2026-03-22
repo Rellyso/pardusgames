@@ -20,7 +20,7 @@ const NAV_ITEMS = [
   { label: "Categorias", href: "#categorias" },
   { label: "Parâmetros", href: "#parametros" },
   // { label: "Galeria", href: "#galeria" },
-  { label: "Contato", href: "#local" },
+  { label: "Local", href: "#local" },
 ];
 
 export const Header = () => {
