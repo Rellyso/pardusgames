@@ -39,7 +39,7 @@ export const CATEGORIES: EventCategory[] = [
   },
   {
     name: "RX",
-    divisions: ["Trio Feminino", "Trio Masculino", "Trio Misto"],
+    divisions: ["Trio Masculino", "Trio Misto"],
     featured: true,
   },
 ] as const;
