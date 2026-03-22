@@ -168,14 +168,17 @@ export const STAFF = [
   {
     name: "Roberta Fernandes",
     role: "Organizadora/Head Coach",
+    image: "/assets/images/staff/roberta.jpeg",
   },
   {
     name: "Isabelle Goes",
     role: "Organizadora",
+    image: "/assets/images/staff/isabelle.jpeg",
   },
   {
     name: "Layo Lano",
     role: "Head Judge",
+    image: "/assets/images/staff/layo.jpeg",
   },
 ];
 
