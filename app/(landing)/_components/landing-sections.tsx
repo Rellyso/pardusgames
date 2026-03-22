@@ -127,7 +127,7 @@ export function CategoriesSection() {
                 </h3>
                 {category.featured ? (
                   <Badge className="rounded-sm text-[10px] tracking-[0.12em]">
-                    TOP
+                    MÁX.
                   </Badge>
                 ) : null}
               </div>
