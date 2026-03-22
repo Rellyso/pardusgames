@@ -24,7 +24,7 @@ export function MainBanner() {
       <div className="relative z-10 mx-auto grid w-full max-w-6xl gap-8 px-4 pb-16 pt-10 sm:pb-20 sm:pt-16 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
         <div>
           <Badge className="mb-3 rounded-sm px-3 py-1 text-[11px] tracking-[0.18em]">
-            COMPETICAO EM TRIO
+            COMPETIÇÃO EM TRIO
           </Badge>
 
           <h1 className="font-heading text-6xl uppercase leading-[0.9] text-white sm:text-8xl lg:text-9xl">

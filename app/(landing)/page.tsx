@@ -1,12 +1,7 @@
 import {
   CategoriesSection,
-  GallerySection,
-  InstagramSection,
   LocationSection,
   ParametersSection,
-  SponsorsSection,
-  TeamSection,
-  TestimonialsSection,
 } from "./_components/landing-sections";
 import { MainBanner } from "./_components/main-banner";
 
@@ -16,11 +11,11 @@ export default function Home() {
       <MainBanner />
       <CategoriesSection />
       <ParametersSection />
-      <TeamSection />
-      <GallerySection />
-      <InstagramSection />
-      <TestimonialsSection />
-      <SponsorsSection />
+      {/* <TeamSection /> */}
+      {/* <GallerySection /> */}
+      {/* <InstagramSection /> */}
+      {/* <TestimonialsSection /> */}
+      {/* <SponsorsSection /> */}
       <LocationSection />
     </main>
   );

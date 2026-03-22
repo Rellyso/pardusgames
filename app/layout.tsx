@@ -31,7 +31,7 @@ const anton = Anton({
 export const metadata: Metadata = {
   title: "Pardus Games 2026",
   description:
-    "Competicao em trio organizada pelo Box Pardus. 23 e 24 de maio de 2026 no SESC Mossoró/RN.",
+    "Competição em trio organizada pelo Box Pardus. 23 e 24 de maio de 2026 no SESC Mossoró/RN.",
 };
 
 export default function RootLayout({
