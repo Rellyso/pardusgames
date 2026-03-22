@@ -16,9 +16,10 @@ import {
 } from "./ui/sheet";
 
 const NAV_ITEMS = [
+  { label: "Quem somos", href: "#quem-somos" },
   { label: "Categorias", href: "#categorias" },
   { label: "Parâmetros", href: "#parametros" },
-  { label: "Galeria", href: "#galeria" },
+  // { label: "Galeria", href: "#galeria" },
   { label: "Contato", href: "#local" },
 ];
 
@@ -30,7 +31,7 @@ export const Header = () => {
           <Image src="/assets/logo.svg" alt="logo" width={80} height={38} />
         </Link>
 
-        <nav className="hidden items-center gap-6 md:flex">
+        <nav className="hidden items-center gap-6 lg:flex">
           {NAV_ITEMS.map((item) => (
             <Link
               key={item.href}
@@ -42,7 +43,7 @@ export const Header = () => {
           ))}
         </nav>
 
-        <div className="hidden items-center gap-2 md:flex">
+        <div className="hidden items-center gap-2 lg:flex">
           <Button
             asChild
             onClick={() => sendGAEvent({ event: "contato", value: "whatsapp" })}
@@ -72,7 +73,7 @@ export const Header = () => {
           </Button>
         </div>
 
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <Sheet>
             <SheetTrigger asChild>
               <Button

@@ -163,37 +163,55 @@ export const STAFF = [
   {
     name: "Paul Klein",
     role: "Locutor Oficial",
+    image: "/assets/images/staff/paul.png",
   },
   {
-    name: "[Nome a confirmar]",
+    name: "Roberta Fernandes",
+    role: "Organizadora/Head Coach",
+  },
+  {
+    name: "Isabelle Goes",
+    role: "Organizadora",
+  },
+  {
+    name: "Layo Lano",
     role: "Head Judge",
   },
-  {
-    name: "[Nome a confirmar]",
-    role: "Organizacao",
-  },
-  {
-    name: "[Nome a confirmar]",
-    role: "Fotografo Oficial",
-  },
-] as const;
+];
 
 export const TESTIMONIALS = [
   {
-    quote: "Não participo de competicoes porque tenho medo do que vao falar.",
-    name: "Atleta Pardus",
-    category: "Scaled",
+    quote: "Grande evento!!! Veio para ficar .  Parabés a todos 🙌",
+    name: "gutemberg_oliveiira",
+    category: "Atleta pardusgames 2024",
+  },
+  {
+    quote: "Massa .. Parabéns pelo campeonato foi um grande evento 🔥🔥",
+    name: "gildeonbezerra",
+    category: "Atleta pardusgames 2024",
+  },
+  {
+    quote: "Evento lindo e super organizado, foi ótimo participar! 🔥😍",
+    name: "monica.beatriz14",
+    category: "Atleta pardusgames 2024",
   },
   {
     quote:
-      "No Pardus eu descobri que competir e sobre coragem, nao sobre perfeicao.",
-    name: "Atleta Convidada",
-    category: "Intermediario",
+      "evento super organizado sem nenhuma intercorrência; só tende a crescer 👏👏",
+    name: "p_davirb",
+    category: "Atleta pardusgames 2024",
   },
   {
-    quote: "Energia absurda, estrutura forte e clima de time do inicio ao fim.",
-    name: "Atleta RX",
-    category: "RX",
+    quote:
+      "Por mais eventos BEM ORGANIZADOS como esse, viu!!! Parabéns, pessoal! Vocês foram IMPECÁVEIS! 👏👏👏",
+    name: "thaissafferreira",
+    category: "Atleta pardusgames 2024",
+  },
+  {
+    quote:
+      "Parabéns pelo evento, realmente merece outras edições, tudo impecável.",
+    name: "ary_anobre",
+    category: "Atleta pardusgames 2024",
   },
 ] as const;
 
@@ -237,3 +255,17 @@ export const INSTAGRAM_POSTS = [
     link: "https://instagram.com/pardusgames",
   },
 ] as const;
+
+export const WHO_WE_ARE = {
+  title: "Quem Somos",
+  intro:
+    "O Pardus Games nasceu de uma ideia simples, mas extremamente necessaria: levar para Mossoro/RN um evento esportivo com alto padrao de qualidade, organizacao e respeito aos atletas.",
+  paragraphs: [
+    "A iniciativa surgiu a partir das ideias de suas idealizadoras, Isabelle Gois e Roberta Fernandes, parceiras de longa data e apaixonadas pelo esporte. Com experiencias vividas em grandes competicoes, decidiram enxergar o esporte por um novo angulo: o da organizacao de um evento que realmente atendesse as expectativas de quem vive o dia a dia do atleta e suas particularidades.",
+    "Assim nasceu o Pardus Games, um evento idealizado por atletas, para atletas.",
+    "A primeira edicao, realizada em 2024, foi um marco para a cidade. O evento se destacou pela pontualidade, organizacao, respeito ao publico e aos competidores, alem de proporcionar uma experiencia leve, dinamica e memoravel. O retorno foi imediato: reconhecimento da comunidade e a certeza de que Mossoro estava pronta para um novo nivel de competicao.",
+    "Para 2026, o Pardus Games da um passo ainda mais ousado. O evento evolui em estrutura, alcance e credibilidade, sendo realizado no SESC Mossoro, um dos principais espacos esportivos da regiao. Alem disso, conta com o apoio de grandes parceiros que acreditam no desenvolvimento do esporte, elevando ainda mais o padrao de entrega e fortalecendo a comunidade fitness local.",
+    "Mais do que uma competicao, o Pardus Games e uma experiencia.",
+  ],
+  founders: ["Isabelle Gois", "Roberta Fernandes"],
+} as const;

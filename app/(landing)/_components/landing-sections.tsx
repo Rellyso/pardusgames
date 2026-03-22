@@ -1,12 +1,15 @@
 import { MapPin, Navigation, Trophy } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import BorderGlow from "@/components/BorderGlow";
+import { Masonry, type MasonryItem } from "@/components/reactbits/masonry";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
@@ -17,25 +20,58 @@ import {
   SPONSORS,
   STAFF,
   TESTIMONIALS,
+  WHO_WE_ARE,
 } from "@/constants/event";
 
-const GALLERY_PLACEHOLDERS = [
-  { id: "gallery-1", aspect: "aspect-4/3" },
-  { id: "gallery-2", aspect: "aspect-square" },
-  { id: "gallery-3", aspect: "aspect-square" },
-  { id: "gallery-4", aspect: "aspect-4/3" },
-  { id: "gallery-5", aspect: "aspect-square" },
-  { id: "gallery-6", aspect: "aspect-square" },
-] as const;
+const GALLERY_MASONRY_ITEMS: MasonryItem[] = [
+  {
+    id: "gallery-1",
+    img: "/assets/images/pardus-2024.png",
+    url: EVENT.instagramLink,
+    height: 230,
+    title: "Pardus Games 2024",
+  },
+  {
+    id: "gallery-2",
+    img: "/assets/images/pardus-2024.png",
+    url: EVENT.instagramLink,
+    height: 320,
+    title: "Pardus Games 2024",
+  },
+  {
+    id: "gallery-3",
+    img: "/assets/images/pardus-2024.png",
+    url: EVENT.instagramLink,
+    height: 260,
+    title: "Pardus Games 2024",
+  },
+  {
+    id: "gallery-4",
+    img: "/assets/images/pardus-2024.png",
+    url: EVENT.instagramLink,
+    height: 300,
+    title: "Pardus Games 2024",
+  },
+  {
+    id: "gallery-5",
+    img: "/assets/images/pardus-2024.png",
+    url: EVENT.instagramLink,
+    height: 220,
+    title: "Pardus Games 2024",
+  },
+  {
+    id: "gallery-6",
+    img: "/assets/images/pardus-2024.png",
+    url: EVENT.instagramLink,
+    height: 340,
+    title: "Pardus Games 2024",
+  },
+];
 
 const TESTIMONIAL_MARQUEE_ITEMS = TESTIMONIALS.flatMap((item) => [
   {
     ...item,
     id: `${item.name}-${item.category}-a`,
-  },
-  {
-    ...item,
-    id: `${item.name}-${item.category}-b`,
   },
 ]);
 
@@ -69,31 +105,83 @@ export function CategoriesSection() {
       <SectionTitle title="Categorias" />
       <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
         {CATEGORIES.map((category) => (
-          <article
+          <BorderGlow
             key={category.name}
-            className={`rounded-md border border-theme-border bg-[#1A1A1A] p-4 sm:p-5 ${
-              category.featured
-                ? "border-theme-primary shadow-[0_0_0_1px_#e5a800]"
-                : ""
-            }`}
+            className="rounded-md"
+            borderRadius={8}
+            edgeSensitivity={36}
+            glowRadius={56}
+            glowIntensity={1.3}
+            glowColor="44 100% 45%"
+            backgroundColor="#1A1A1A"
+            colors={["#e5a800", "#f5a500", "#e5a800"]}
           >
-            <div className="mb-4 flex items-center justify-between">
-              <h3 className="font-heading text-3xl uppercase leading-none sm:text-4xl">
-                {category.name}
-              </h3>
-              {category.featured ? (
-                <Badge className="rounded-sm text-[10px] tracking-[0.12em]">
-                  TOP
-                </Badge>
-              ) : null}
-            </div>
-            <ul className="space-y-2 text-sm uppercase text-zinc-200 sm:text-base">
-              {category.divisions.map((division) => (
-                <li key={`${category.name}-${division}`}>{division}</li>
-              ))}
-            </ul>
-          </article>
+            <article
+              className={`p-4 sm:p-5 ${
+                category.featured ? "shadow-[0_0_0_1px_#e5a800_inset]" : ""
+              }`}
+            >
+              <div className="mb-4 flex items-center justify-between">
+                <h3 className="font-heading text-3xl uppercase leading-none sm:text-4xl">
+                  {category.name}
+                </h3>
+                {category.featured ? (
+                  <Badge className="rounded-sm text-[10px] tracking-[0.12em]">
+                    TOP
+                  </Badge>
+                ) : null}
+              </div>
+              <ul className="space-y-2 text-sm uppercase text-zinc-200 sm:text-base">
+                {category.divisions.map((division) => (
+                  <li key={`${category.name}-${division}`}>{division}</li>
+                ))}
+              </ul>
+            </article>
+          </BorderGlow>
         ))}
+      </div>
+    </section>
+  );
+}
+
+export function WhoWeAreSection() {
+  return (
+    <section
+      id="quem-somos"
+      className="mx-auto w-full max-w-6xl px-4 py-14 sm:py-20"
+    >
+      <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr] lg:gap-10">
+        <article className="rounded-md border border-theme-border bg-[#141414] p-5 sm:p-7">
+          <SectionTitle title={WHO_WE_ARE.title} subtitle="Nossa historia" />
+          <p className="mb-4 text-sm leading-relaxed text-zinc-100 sm:text-base">
+            {WHO_WE_ARE.intro}
+          </p>
+          <div className="space-y-4 text-sm leading-relaxed text-zinc-300 sm:text-base">
+            {WHO_WE_ARE.paragraphs.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
+          </div>
+        </article>
+
+        <aside className="h-fit rounded-md border border-theme-primary/50 bg-black p-5 sm:p-7">
+          <span className="inline-flex rounded-sm border border-theme-primary px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-theme-primary">
+            Idealizadoras
+          </span>
+          <div className="mt-4 space-y-3">
+            {WHO_WE_ARE.founders.map((founder) => (
+              <div
+                key={founder}
+                className="rounded-sm border border-theme-border bg-[#121212] px-4 py-3 text-sm font-semibold uppercase tracking-[0.08em] text-zinc-100"
+              >
+                {founder}
+              </div>
+            ))}
+          </div>
+          <p className="mt-5 text-sm leading-relaxed text-zinc-300">
+            Mais do que uma competicao, o Pardus Games e uma experiencia feita
+            por atletas, para atletas.
+          </p>
+        </aside>
       </div>
     </section>
   );
@@ -153,7 +241,7 @@ export function ParametersSection() {
         </Accordion>
       </div>
       <div className="mt-6 sm:mt-8">
-        <Button asChild variant="outline" className="w-full sm:w-auto">
+        <Button variant="outline" className="w-full sm:w-auto">
           <Link href={EVENT.regulationLink}>
             Baixar regulamento completo (PDF)
           </Link>
@@ -175,10 +263,17 @@ export function TeamSection() {
               className="rounded-md border border-zinc-300 bg-white p-4"
             >
               <div className="mb-4 flex items-center gap-3">
-                <div className="size-14 rounded-full border border-zinc-300 bg-zinc-200" />
+                <Avatar>
+                  {person.image && (
+                    <AvatarImage src={person.image} alt={person.name} />
+                  )}
+                  <AvatarFallback>{person.name.charAt(0)}</AvatarFallback>
+                </Avatar>
                 <div>
-                  <h3 className="font-semibold uppercase">{person.name}</h3>
-                  <p className="text-xs uppercase tracking-[0.12em] text-[#9e7700]">
+                  <h3 className="font-semibold leading-4 uppercase">
+                    {person.name}
+                  </h3>
+                  <p className="text-xs break-all uppercase tracking-[0.12em] text-[#9e7700]">
                     {person.role}
                   </p>
                 </div>
@@ -198,26 +293,16 @@ export function GallerySection() {
       className="mx-auto w-full max-w-6xl px-4 py-14 sm:py-20"
     >
       <SectionTitle title="Pardus Games 2024" subtitle="Edição anterior" />
-      <div className="grid grid-cols-2 gap-3 md:grid-cols-3">
-        {GALLERY_PLACEHOLDERS.map((item) => (
-          <article
-            key={item.id}
-            className={`group relative overflow-hidden rounded-md border border-theme-border ${item.aspect}`}
-          >
-            <Image
-              src="/assets/images/pardus-2024.png"
-              alt="Galeria Pardus Games 2024"
-              fill
-              sizes="(max-width: 768px) 50vw, 33vw"
-              className="object-cover transition duration-500 group-hover:scale-110"
-            />
-            <div className="absolute inset-0 bg-black/0 transition duration-300 group-hover:bg-black/45" />
-            <div className="absolute bottom-2 right-2 rounded-sm border border-theme-primary bg-black/60 px-2 py-1 text-xs uppercase tracking-[0.12em] text-theme-primary opacity-0 transition duration-300 group-hover:opacity-100">
-              Expandir
-            </div>
-          </article>
-        ))}
-      </div>
+      <Masonry
+        items={GALLERY_MASONRY_ITEMS}
+        animateFrom="bottom"
+        duration={0.6}
+        stagger={0.06}
+        scaleOnHover
+        hoverScale={1.05}
+        blurToFocus
+        colorShiftOnHover={false}
+      />
       <div className="mt-8">
         <Button asChild variant="outline" className="w-full sm:w-auto">
           <Link
@@ -299,7 +384,9 @@ export function TestimonialsSection() {
                 key={item.id}
                 className="w-72.5 shrink-0 rounded-md border border-theme-border bg-[#151515] p-5 sm:w-85"
               >
-                <div className="mb-4 size-12 rounded-full border border-theme-border bg-zinc-800" />
+                <Avatar className="mb-1">
+                  <AvatarFallback>{item.name.charAt(0)}</AvatarFallback>
+                </Avatar>
                 <p className="text-lg leading-snug text-white sm:text-xl">
                   \"{item.quote}\"
                 </p>

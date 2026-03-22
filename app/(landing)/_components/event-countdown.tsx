@@ -1,9 +1,10 @@
 "use client";
 
+import { EVENT } from "@/constants/event";
 import { differenceInSeconds } from "date-fns";
 import { useEffect, useState } from "react";
 
-const EVENT_DATE = new Date("2026-05-23T00:00:00.000-03:00");
+const EVENT_DATE = new Date(EVENT.eventDateISO);
 
 const UNIT_SECONDS = {
   days: 24 * 60 * 60,
