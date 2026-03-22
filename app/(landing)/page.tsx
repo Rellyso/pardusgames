@@ -3,7 +3,7 @@ import { MainBanner } from "./_components/main-banner";
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen flex flex-col">
       <MainBanner />
 
       <section
