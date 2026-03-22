@@ -89,7 +89,7 @@ export const Header = () => {
               <SheetHeader>
                 <SheetTitle>Menu</SheetTitle>
                 <SheetDescription>
-                  Navegue rapido pelas seções principais.
+                  Navegue rápido pelas seções principais.
                 </SheetDescription>
               </SheetHeader>
 
@@ -121,7 +121,7 @@ export const Header = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Whatsapp
+                    WhatsApp
                   </Link>
                 </Button>
               </nav>

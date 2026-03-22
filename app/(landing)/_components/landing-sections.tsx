@@ -152,7 +152,7 @@ export function WhoWeAreSection() {
     >
       <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr] lg:gap-10">
         <article className="rounded-md border border-theme-border bg-[#141414] p-5 sm:p-7">
-          <SectionTitle title={WHO_WE_ARE.title} subtitle="Nossa historia" />
+          <SectionTitle title={WHO_WE_ARE.title} subtitle="Nossa história" />
           <p className="mb-4 text-sm leading-relaxed text-zinc-100 sm:text-base">
             {WHO_WE_ARE.intro}
           </p>
@@ -178,7 +178,7 @@ export function WhoWeAreSection() {
             ))}
           </div>
           <p className="mt-5 text-sm leading-relaxed text-zinc-300">
-            Mais do que uma competicao, o Pardus Games e uma experiencia feita
+            Mais do que uma competição, o Pardus Games é uma experiência feita
             por atletas, para atletas.
           </p>
         </aside>
@@ -324,7 +324,7 @@ export function InstagramSection() {
       id="instagram"
       className="mx-auto w-full max-w-6xl px-4 py-14 sm:py-20"
     >
-      <SectionTitle title="Ultimas no Instagram" subtitle="@pardusgames" />
+      <SectionTitle title="Últimas no Instagram" subtitle="@pardusgames" />
 
       <div className="grid grid-cols-2 gap-3 md:grid-cols-3">
         {INSTAGRAM_POSTS.map((post) => (
@@ -462,8 +462,8 @@ export function LocationSection() {
             </li>
           </ul>
           <p className="mt-5 text-sm uppercase text-zinc-300">
-            Dica para atletas de fora: reserve hospedagem com antecedencia em
-            areas centrais para facilitar o deslocamento.
+            Dica para atletas de fora: reserve hospedagem com antecedência em
+            áreas centrais para facilitar o deslocamento.
           </p>
           <div className="mt-6">
             <Button asChild className="w-full sm:w-auto">

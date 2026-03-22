@@ -79,7 +79,7 @@ export function Masonry({
             <div className="relative w-full" style={{ height: item.height }}>
               <Image
                 src={item.img}
-                alt={item.title ?? "Publicacao Pardus Games"}
+                alt={item.title ?? "Publicação Pardus Games"}
                 fill
                 sizes="(max-width: 768px) 50vw, 33vw"
                 className={cn(

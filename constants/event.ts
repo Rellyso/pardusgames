@@ -2,7 +2,7 @@ export const EVENT = {
   name: "PARDUS GAMES 2026",
   shortDate: "23 E 24 DE MAIO",
   fullDate: "23 e 24 de maio de 2026",
-  cityState: "SESC · MOSSORO/RN",
+  cityState: "SESC · MOSSORÓ/RN",
   venue: "SESC Mossoró",
   city: "Mossoró",
   state: "Rio Grande do Norte",
@@ -146,8 +146,8 @@ export const PARAMETERS = [
       { movement: "Pull-Ups", female: "Sim", male: "Sim" },
       { movement: "Chest to Bar", female: "Sim", male: "Sim" },
       { movement: "BMU", female: "Sim", male: "Sim" },
-      { movement: "RMU", female: "Não obrigatorio", male: "Sim" },
-      { movement: "Toes to Bar", female: "Não obrigatorio", male: "Sim" },
+      { movement: "RMU", female: "Não obrigatório", male: "Sim" },
+      { movement: "Toes to Bar", female: "Não obrigatório", male: "Sim" },
       { movement: "Toes to Ring", female: "Sim", male: "Sim" },
       { movement: "HSPU", female: "Sim", male: "Sim" },
       { movement: "HSW", female: "Sim", male: "Sim" },
@@ -184,7 +184,7 @@ export const STAFF = [
 
 export const TESTIMONIALS = [
   {
-    quote: "Grande evento!!! Veio para ficar .  Parabés a todos 🙌",
+    quote: "Grande evento!!! Veio para ficar. Parabéns a todos 🙌",
     name: "gutemberg_oliveiira",
     category: "Atleta pardusgames 2024",
   },
@@ -229,32 +229,32 @@ export const SPONSORS = [
 export const INSTAGRAM_POSTS = [
   {
     id: "post-1",
-    title: "Publicacao 01",
+    title: "Publicação 01",
     link: "https://instagram.com/pardusgames",
   },
   {
     id: "post-2",
-    title: "Publicacao 02",
+    title: "Publicação 02",
     link: "https://instagram.com/pardusgames",
   },
   {
     id: "post-3",
-    title: "Publicacao 03",
+    title: "Publicação 03",
     link: "https://instagram.com/pardusgames",
   },
   {
     id: "post-4",
-    title: "Publicacao 04",
+    title: "Publicação 04",
     link: "https://instagram.com/pardusgames",
   },
   {
     id: "post-5",
-    title: "Publicacao 05",
+    title: "Publicação 05",
     link: "https://instagram.com/pardusgames",
   },
   {
     id: "post-6",
-    title: "Publicacao 06",
+    title: "Publicação 06",
     link: "https://instagram.com/pardusgames",
   },
 ] as const;
@@ -262,13 +262,13 @@ export const INSTAGRAM_POSTS = [
 export const WHO_WE_ARE = {
   title: "Quem Somos",
   intro:
-    "O Pardus Games nasceu de uma ideia simples, mas extremamente necessaria: levar para Mossoro/RN um evento esportivo com alto padrao de qualidade, organizacao e respeito aos atletas.",
+    "O Pardus Games nasceu de uma ideia simples, mas extremamente necessária: levar para Mossoró/RN um evento esportivo com alto padrão de qualidade, organização e respeito aos atletas.",
   paragraphs: [
-    "A iniciativa surgiu a partir das ideias de suas idealizadoras, Isabelle Gois e Roberta Fernandes, parceiras de longa data e apaixonadas pelo esporte. Com experiencias vividas em grandes competicoes, decidiram enxergar o esporte por um novo angulo: o da organizacao de um evento que realmente atendesse as expectativas de quem vive o dia a dia do atleta e suas particularidades.",
+    "A iniciativa surgiu a partir das ideias de suas idealizadoras, Isabelle Gois e Roberta Fernandes, parceiras de longa data e apaixonadas pelo esporte. Com experiências vividas em grandes competições, decidiram enxergar o esporte por um novo ângulo: o da organização de um evento que realmente atendesse às expectativas de quem vive o dia a dia do atleta e suas particularidades.",
     "Assim nasceu o Pardus Games, um evento idealizado por atletas, para atletas.",
-    "A primeira edicao, realizada em 2024, foi um marco para a cidade. O evento se destacou pela pontualidade, organizacao, respeito ao publico e aos competidores, alem de proporcionar uma experiencia leve, dinamica e memoravel. O retorno foi imediato: reconhecimento da comunidade e a certeza de que Mossoro estava pronta para um novo nivel de competicao.",
-    "Para 2026, o Pardus Games da um passo ainda mais ousado. O evento evolui em estrutura, alcance e credibilidade, sendo realizado no SESC Mossoro, um dos principais espacos esportivos da regiao. Alem disso, conta com o apoio de grandes parceiros que acreditam no desenvolvimento do esporte, elevando ainda mais o padrao de entrega e fortalecendo a comunidade fitness local.",
-    "Mais do que uma competicao, o Pardus Games e uma experiencia.",
+    "A primeira edição, realizada em 2024, foi um marco para a cidade. O evento se destacou pela pontualidade, organização, respeito ao público e aos competidores, além de proporcionar uma experiência leve, dinâmica e memorável. O retorno foi imediato: reconhecimento da comunidade e a certeza de que Mossoró estava pronta para um novo nível de competição.",
+    "Para 2026, o Pardus Games dá um passo ainda mais ousado. O evento evolui em estrutura, alcance e credibilidade, sendo realizado no SESC Mossoró, um dos principais espaços esportivos da região. Além disso, conta com o apoio de grandes parceiros que acreditam no desenvolvimento do esporte, elevando ainda mais o padrão de entrega e fortalecendo a comunidade fitness local.",
+    "Mais do que uma competição, o Pardus Games é uma experiência.",
   ],
   founders: ["Isabelle Gois", "Roberta Fernandes"],
 } as const;
