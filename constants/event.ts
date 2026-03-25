@@ -180,6 +180,16 @@ export const STAFF = [
     role: "Head Judge",
     image: "/assets/images/staff/layo.jpeg",
   },
+  {
+    name: "Iuri Bessa",
+    role: "Coordenador de Infraestrura",
+    image: "/assets/images/staff/iure.jpg",
+  },
+  {
+    name: "Mariani Dos Santos",
+    role: "Coordenadora de Marketing",
+    image: "/assets/images/staff/mariani.jpg",
+  },
 ];
 
 export const TESTIMONIALS = [
