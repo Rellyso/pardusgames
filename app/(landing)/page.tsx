@@ -3,6 +3,7 @@ import {
   GallerySection,
   LocationSection,
   ParametersSection,
+  SponsorsSection,
   TeamSection,
   TestimonialsSection,
   WhoWeAreSection,
@@ -17,10 +18,10 @@ export default function Home() {
       <CategoriesSection />
       <ParametersSection />
       <TeamSection />
-      {/* <GallerySection /> */}``
+      <GallerySection />
       {/* <InstagramSection /> */}
       <TestimonialsSection />
-      {/* <SponsorsSection /> */}
+      <SponsorsSection />
       <LocationSection />
     </main>
   );

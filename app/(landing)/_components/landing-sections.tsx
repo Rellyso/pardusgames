@@ -22,46 +22,47 @@ import {
   TESTIMONIALS,
   WHO_WE_ARE,
 } from "@/constants/event";
+import { cn } from "@/lib/utils";
 
 const GALLERY_MASONRY_ITEMS: MasonryItem[] = [
   {
     id: "gallery-1",
-    img: "/assets/images/pardus-2024.png",
+    img: "/assets/images/previous-editions/01.jpeg",
     url: EVENT.instagramLink,
     height: 230,
     title: "Pardus Games 2024",
   },
   {
     id: "gallery-2",
-    img: "/assets/images/pardus-2024.png",
+    img: "/assets/images/previous-editions/02.jpeg",
     url: EVENT.instagramLink,
     height: 320,
     title: "Pardus Games 2024",
   },
   {
     id: "gallery-3",
-    img: "/assets/images/pardus-2024.png",
+    img: "/assets/images/previous-editions/03.jpeg",
     url: EVENT.instagramLink,
     height: 260,
     title: "Pardus Games 2024",
   },
   {
     id: "gallery-4",
-    img: "/assets/images/pardus-2024.png",
+    img: "/assets/images/previous-editions/04.jpeg",
     url: EVENT.instagramLink,
     height: 300,
     title: "Pardus Games 2024",
   },
   {
     id: "gallery-5",
-    img: "/assets/images/pardus-2024.png",
+    img: "/assets/images/previous-editions/05.jpeg",
     url: EVENT.instagramLink,
     height: 220,
     title: "Pardus Games 2024",
   },
   {
     id: "gallery-6",
-    img: "/assets/images/pardus-2024.png",
+    img: "/assets/images/previous-editions/06.jpeg",
     url: EVENT.instagramLink,
     height: 340,
     title: "Pardus Games 2024",
@@ -413,15 +414,29 @@ export function SponsorsSection() {
         <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-5">
           {SPONSORS.map((sponsor, index) => (
             <article
-              key={sponsor}
-              className={`flex h-24 items-center justify-center rounded-md border uppercase tracking-widest ${
-                index === 0
-                  ? "border-theme-primary bg-black text-theme-primary"
-                  : "border-theme-border bg-zinc-900 text-zinc-300"
-              }`}
+              key={sponsor.name}
+              className={cn(
+                "flex h-24 relative items-center justify-center rounded-md border uppercase tracking-widest",
+                {
+                  "border-theme-primary bg-black text-theme-primary":
+                    sponsor.variant === "default",
+                  "border-theme-primary bg-white text-zinc-300":
+                    sponsor.variant === "secondary",
+                },
+              )}
             >
               {index === 0 ? <Trophy className="mr-2 size-4" /> : null}
-              <span className="text-xs sm:text-sm">{sponsor}</span>
+              {!sponsor.logo && (
+                <span className="text-xs sm:text-sm">{sponsor.name}</span>
+              )}
+              {sponsor.logo && (
+                <Image
+                  src={sponsor.logo}
+                  alt={sponsor.name}
+                  className="max-h-12 w-auto object-contain top-1/2 translate-y-1/2"
+                  fill
+                />
+              )}
             </article>
           ))}
         </div>

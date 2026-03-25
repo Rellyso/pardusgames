@@ -229,12 +229,21 @@ export const TESTIMONIALS = [
 ] as const;
 
 export const SPONSORS = [
-  "BOX PARDUS",
-  "PATROCINADOR 01",
-  "PATROCINADOR 02",
-  "PATROCINADOR 03",
-  "PATROCINADOR 04",
-] as const;
+  {
+    name: "BOX PARDUS",
+    variant: "default",
+  },
+  {
+    name: "MONSTER ENERGY",
+    logo: "/assets/images/sponsors/monster-energy.png",
+    variant: "default",
+  },
+  {
+    name: "CYM",
+    logo: "/assets/images/sponsors/cym.png",
+    variant: "secondary",
+  },
+];
 
 export const INSTAGRAM_POSTS = [
   {
