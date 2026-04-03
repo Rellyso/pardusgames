@@ -22,7 +22,9 @@ import {
   TESTIMONIALS,
   WHO_WE_ARE,
 } from "@/constants/event";
+import { workouts } from "@/constants/workouts-data";
 import { cn } from "@/lib/utils";
+import { WorkoutCard } from "@/components/workout-card";
 
 const GALLERY_MASONRY_ITEMS: MasonryItem[] = [
   {
@@ -247,6 +249,23 @@ export function ParametersSection() {
             Baixar regulamento completo (PDF)
           </Link>
         </Button>
+      </div>
+    </section>
+  );
+}
+
+export function WorkoutsSection() {
+  return (
+    <section
+      id="provas"
+      className="mx-auto w-full max-w-6xl px-4 py-14 sm:py-20"
+    >
+      <SectionTitle title="Provas" subtitle="WODs do campeonato" />
+
+      <div className="grid gap-3 md:grid-cols-3">
+        {workouts.map((workout) => (
+          <WorkoutCard key={workout.slug} workout={workout} />
+        ))}
       </div>
     </section>
   );

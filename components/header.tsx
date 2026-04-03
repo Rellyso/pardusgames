@@ -19,6 +19,7 @@ const NAV_ITEMS = [
   { label: "Quem somos", href: "#quem-somos" },
   { label: "Categorias", href: "#categorias" },
   { label: "Parâmetros", href: "#parametros" },
+  { label: "Provas", href: "/#provas" },
   // { label: "Galeria", href: "#galeria" },
   { label: "Local", href: "#local" },
 ];

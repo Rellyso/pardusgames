@@ -43,6 +43,12 @@ export function Footer() {
             </Link>
             <Link
               className="transition-colors hover:text-white"
+              href="/#provas"
+            >
+              Provas
+            </Link>
+            <Link
+              className="transition-colors hover:text-white"
               href={EVENT.registrationLink}
               target="_blank"
               rel="noopener noreferrer"
