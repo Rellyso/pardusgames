@@ -4,6 +4,8 @@ import { sendGAEvent } from "@next/third-parties/google";
 import { List, WhatsappLogoIcon } from "@phosphor-icons/react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
+import { type MouseEvent, useState } from "react";
 import { EVENT } from "@/constants/event";
 import { Button } from "./ui/button";
 import {
@@ -24,7 +26,28 @@ const NAV_ITEMS = [
   { label: "Local", href: "#local" },
 ];
 
+const TIME_UNTIL_NAVIGATION = 300;
+
 export const Header = () => {
+  const router = useRouter();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const closeMenuThenNavigate =
+    (href: string, target?: "_blank") =>
+    (event: MouseEvent<HTMLAnchorElement>) => {
+      event.preventDefault();
+      setIsMenuOpen(false);
+
+      window.setTimeout(() => {
+        if (target === "_blank") {
+          window.open(href, "_blank", "noopener,noreferrer");
+          return;
+        }
+
+        router.push(href);
+      }, TIME_UNTIL_NAVIGATION);
+    };
+
   return (
     <div className="sticky top-0 z-40 flex h-20 w-full items-center justify-center border-b border-theme-border bg-black/95 backdrop-blur-sm">
       <header className="mx-4 flex w-full max-w-6xl items-center justify-between">
@@ -75,7 +98,7 @@ export const Header = () => {
         </div>
 
         <div className="lg:hidden">
-          <Sheet>
+          <Sheet open={isMenuOpen} onOpenChange={setIsMenuOpen}>
             <SheetTrigger asChild>
               <Button
                 variant="ghost"
@@ -102,7 +125,12 @@ export const Header = () => {
                     variant="ghost"
                     className="justify-start text-left uppercase"
                   >
-                    <Link href={item.href}>{item.label}</Link>
+                    <Link
+                      href={item.href}
+                      onClick={closeMenuThenNavigate(item.href)}
+                    >
+                      {item.label}
+                    </Link>
                   </Button>
                 ))}
 
@@ -111,6 +139,10 @@ export const Header = () => {
                     href={EVENT.registrationLink}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={closeMenuThenNavigate(
+                      EVENT.registrationLink,
+                      "_blank",
+                    )}
                   >
                     Inscreva-se agora
                   </Link>
@@ -121,6 +153,10 @@ export const Header = () => {
                     href={EVENT.whatsappLink}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={closeMenuThenNavigate(
+                      EVENT.whatsappLink,
+                      "_blank",
+                    )}
                   >
                     WhatsApp
                   </Link>
