@@ -743,7 +743,7 @@ export const workouts: Workout[] = [
           "O tempo é registrado ao final do último round ou ao atingir o time cap",
         ],
         rules:
-          "Os atletas devem alternar na ordem A → B → C obrigatoriamente. Cada atleta trabalha 3 rounds consecutivos. O Step Down no Box Jump é obrigatório. O Box Jump Over Step Down significa saltar sobre a caixa e descer com um pé de cada vez (step down).",
+          "Os atletas devem alternar na ordem A → B → C obrigatoriamente. O Step Down no Box Jump é obrigatório. O Box Jump Over Step Down significa saltar sobre a caixa e descer com um pé de cada vez (step down).",
       },
       {
         categoryKey: "amador",
@@ -756,7 +756,7 @@ export const workouts: Workout[] = [
           "O tempo é registrado ao final do último round ou ao atingir o time cap",
         ],
         rules:
-          "Os atletas devem alternar na ordem A → B → C obrigatoriamente. Cada atleta trabalha 3 rounds consecutivos. O Step Down no Box Jump é obrigatório. O Box Jump Over Step Down significa saltar sobre a caixa e descer com um pé de cada vez (step down).",
+          "Os atletas devem alternar na ordem A → B → C obrigatoriamente. O Step Down no Box Jump é obrigatório. O Box Jump Over Step Down significa saltar sobre a caixa e descer com um pé de cada vez (step down).",
       },
       {
         categoryKey: "intermediario",
@@ -769,7 +769,7 @@ export const workouts: Workout[] = [
           "O tempo é registrado ao final do último round ou ao atingir o time cap",
         ],
         rules:
-          "Os atletas devem alternar na ordem A → B → C obrigatoriamente. Cada atleta trabalha 3 rounds consecutivos. O Step Down no Box Jump é obrigatório. O Box Jump Over Step Down significa saltar sobre a caixa e descer com um pé de cada vez (step down).",
+          "Os atletas devem alternar na ordem A → B → C obrigatoriamente. O Step Down no Box Jump é obrigatório. O Box Jump Over Step Down significa saltar sobre a caixa e descer com um pé de cada vez (step down).",
       },
       {
         categoryKey: "rx",
@@ -782,7 +782,7 @@ export const workouts: Workout[] = [
           "O tempo é registrado ao final do último round ou ao atingir o time cap",
         ],
         rules:
-          "Os atletas devem alternar na ordem A → B → C obrigatoriamente. Cada atleta trabalha 3 rounds consecutivos. O Step Down no Box Jump é obrigatório. O Box Jump Over Step Down significa saltar sobre a caixa e descer com um pé de cada vez (step down).",
+          "Os atletas devem alternar na ordem A → B → C obrigatoriamente. O Step Down no Box Jump é obrigatório. O Box Jump Over Step Down significa saltar sobre a caixa e descer com um pé de cada vez (step down).",
       },
     ],
   },
