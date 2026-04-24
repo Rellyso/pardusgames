@@ -51,7 +51,7 @@ export const Header = () => {
   return (
     <div className="sticky top-0 z-40 flex h-20 w-full items-center justify-center border-b border-theme-border bg-black/95 backdrop-blur-sm">
       <header className="mx-4 flex w-full max-w-6xl items-center justify-between">
-        <Link href="#inicio" className="flex h-full items-center py-4">
+        <Link href="/#inicio" className="flex h-full items-center py-4">
           <Image src="/assets/logo.svg" alt="logo" width={80} height={38} />
         </Link>
 
