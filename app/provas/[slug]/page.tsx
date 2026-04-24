@@ -3,6 +3,8 @@ import { notFound } from "next/navigation";
 import { CategorySection } from "@/components/workouts/category-section";
 import { CategoryTabs } from "@/components/workouts/category-tabs";
 import { WorkoutHero } from "@/components/workouts/workout-hero";
+import { WorkoutsNav } from "@/components/workouts/workouts-nav";
+import { RestIndicator } from "@/components/workouts/rest-indicator";
 import {
   getPublishedWorkouts,
   getWorkoutBySlug,
@@ -61,21 +63,27 @@ export default async function WorkoutPage({ params }: PageProps) {
   }));
 
   return (
-    <main className="min-h-screen bg-background">
-      <WorkoutHero workout={workout} />
+    <>
+      <main className="min-h-screen bg-background">
+        <WorkoutHero workout={workout} />
 
-      <CategoryTabs categories={categoryTabs} />
+        <CategoryTabs categories={categoryTabs} />
 
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 px-4 py-8 sm:py-10">
-        {workout.categories.map((category) => (
-          <CategorySection
-            key={category.key}
-            category={category}
-            categoryId={getCategoryId(category.key)}
-            flows={workout.flowByCategory ?? []}
-          />
-        ))}
-      </div>
-    </main>
+        <RestIndicator workoutNumber={workout.number} />
+
+        <div className="mx-auto flex w-full max-w-6xl flex-col gap-6 px-4 py-8 sm:py-10">
+          {workout.categories.map((category) => (
+            <CategorySection
+              key={category.key}
+              category={category}
+              categoryId={getCategoryId(category.key)}
+              flows={workout.flowByCategory ?? []}
+            />
+          ))}
+        </div>
+      </main>
+
+      <WorkoutsNav currentNumber={workout.number} />
+    </>
   );
 }

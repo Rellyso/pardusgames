@@ -33,6 +33,9 @@ export type Workout = {
   status: WorkoutStatus;
   categories?: WorkoutCategory[];
   flowByCategory?: CategoryFlow[];
+  nextSlug?: string;
+  previousSlug?: string;
+  restTime?: string;
 };
 
 export const workouts: Workout[] = [
@@ -640,6 +643,8 @@ export const workouts: Workout[] = [
     name: "All Forces to 9 Problems - Prova 3",
     timeCap: "For time 11'",
     status: "published",
+    nextSlug: "all-forces-to-9-problems-prova-4",
+    restTime: "1:00",
     categories: [
       {
         key: "scaled",
@@ -787,6 +792,7 @@ export const workouts: Workout[] = [
     name: "All Forces to 9 Problems - Prova 4",
     timeCap: "AMRAP 6'",
     status: "published",
+    previousSlug: "all-forces-to-9-problems-prova-3",
     categories: [
       {
         key: "scaled",
