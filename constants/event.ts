@@ -13,9 +13,48 @@ export const EVENT = {
   instagramLink: "https://instagram.com/pardusgames",
   registrationLink:
     "https://inscricoes.wodengage.games/eventos/pardus-games-2026",
-  regulationLink: "/files/regulamento-pardus-games-2026.pdf",
+  regulationLink:
+    "https://drive.google.com/file/d/1fQcjucUhROgH2gZYatcjHwBllQVY1mfG/view",
   whatsappLink: "https://wa.me/+558488995994",
   eventDateISO: "2026-05-23T00:00:00.000-03:00",
+  minorAuthorizationLink:
+    "https://drive.google.com/file/d/1FJnYdpnkHl5KjEj99edRjye9wwK7rt1G/view",
+  disclaimer:
+    "https://drive.google.com/file/d/1oaDftV4a0CsVn4zXas0nIeUuN4J92NwB/view",
+} as const;
+
+export const IMPORTANT_DOCUMENTS = {
+  title: "Documentos importantes",
+  subtitle: "Acesso rápido",
+  items: [
+    {
+      title: "Regulamento oficial",
+      description:
+        "Veja o PDF com regras, padrões e informações gerais do evento.",
+      href: EVENT.regulationLink,
+      cta: "Abrir PDF",
+    },
+    {
+      title: "Autorização para menores",
+      description:
+        "Veja o PDF de autorização para menores de idade participarem do evento.",
+      href: EVENT.minorAuthorizationLink,
+      cta: "Abrir PDF",
+    },
+    {
+      title: "Termo de responsabilidade do atleta",
+      description: "Veja o PDF com o termo de responsabilidade do atleta.",
+      href: EVENT.disclaimer,
+      cta: "Abrir PDF",
+    },
+    {
+      title: "Inscrição oficial",
+      description:
+        "Acesse o link oficial para conferir o evento e realizar sua inscrição.",
+      href: EVENT.registrationLink,
+      cta: "Ir para inscrição",
+    },
+  ],
 } as const;
 
 type EventCategory = {

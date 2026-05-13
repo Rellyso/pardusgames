@@ -22,7 +22,7 @@ const NAV_ITEMS = [
   { label: "Categorias", href: "#categorias" },
   { label: "Parâmetros", href: "#parametros" },
   { label: "Provas", href: "/#provas" },
-  // { label: "Galeria", href: "#galeria" },
+  { label: "Docs", href: "#documentos " },
   { label: "Local", href: "#local" },
 ];
 

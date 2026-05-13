@@ -1,5 +1,6 @@
 import {
   CategoriesSection,
+  DocumentsSection,
   GallerySection,
   LocationSection,
   ParametersSection,
@@ -19,6 +20,7 @@ export default function Home() {
       <CategoriesSection />
       <ParametersSection />
       <WorkoutsSection />
+      <DocumentsSection />
       <TeamSection />
       <GallerySection />
       {/* <InstagramSection /> */}

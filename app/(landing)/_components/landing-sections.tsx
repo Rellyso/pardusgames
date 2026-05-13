@@ -1,4 +1,4 @@
-import { MapPin, Navigation, Trophy } from "lucide-react";
+import { ExternalLink, FileText, MapPin, Navigation, Trophy } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import BorderGlow from "@/components/BorderGlow";
@@ -15,6 +15,7 @@ import { Button } from "@/components/ui/button";
 import {
   CATEGORIES,
   EVENT,
+  IMPORTANT_DOCUMENTS,
   INSTAGRAM_POSTS,
   PARAMETERS,
   SPONSORS,
@@ -265,6 +266,52 @@ export function WorkoutsSection() {
       <div className="grid gap-3 md:grid-cols-3">
         {workouts.map((workout) => (
           <WorkoutCard key={workout.slug} workout={workout} />
+        ))}
+      </div>
+    </section>
+  );
+}
+
+export function DocumentsSection() {
+  return (
+    <section
+      id="documentos"
+      className="mx-auto w-full max-w-6xl px-4 py-14 sm:py-20"
+    >
+      <SectionTitle
+        title={IMPORTANT_DOCUMENTS.title}
+        subtitle={IMPORTANT_DOCUMENTS.subtitle}
+      />
+
+      <div className="grid gap-3 md:grid-cols-2">
+        {IMPORTANT_DOCUMENTS.items.map((item) => (
+          <article
+            key={item.title}
+            className="flex h-full flex-col rounded-md border border-theme-border bg-[#121212] p-5 sm:p-6"
+          >
+            <div className="mb-4 flex items-start gap-3">
+              <div className="flex size-11 shrink-0 items-center justify-center rounded-md border border-theme-primary/30 bg-black text-theme-primary">
+                <FileText className="size-5" />
+              </div>
+              <div>
+                <h3 className="font-heading text-2xl uppercase leading-none sm:text-3xl">
+                  {item.title}
+                </h3>
+                <p className="mt-2 text-sm leading-relaxed text-zinc-300">
+                  {item.description}
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-auto pt-2">
+              <Button asChild className="w-full sm:w-auto">
+                <Link href={item.href} target="_blank" rel="noopener noreferrer">
+                  {item.cta}
+                  <ExternalLink className="ml-2 size-4" />
+                </Link>
+              </Button>
+            </div>
+          </article>
         ))}
       </div>
     </section>
