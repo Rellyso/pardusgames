@@ -21,12 +21,19 @@ export const EVENT = {
     "https://drive.google.com/file/d/1FJnYdpnkHl5KjEj99edRjye9wwK7rt1G/view",
   disclaimer:
     "https://drive.google.com/file/d/1oaDftV4a0CsVn4zXas0nIeUuN4J92NwB/view",
+  ticketsLink: "https://outgo.com.br/pardus-games-2026",
 } as const;
 
 export const IMPORTANT_DOCUMENTS = {
   title: "Documentos importantes",
   subtitle: "Acesso rápido",
   items: [
+    {
+      title: "Compra dos ingressos",
+      description: "Acesse o link oficial da venda dos ingressos do campeonato",
+      href: EVENT.ticketsLink,
+      cta: "Compre agora",
+    },
     {
       title: "Regulamento oficial",
       description:

@@ -41,11 +41,11 @@ export function MainBanner() {
           <div className="mt-7 flex flex-col gap-3 sm:flex-row">
             <Button asChild size="lg" className="sm:min-w-55">
               <Link
-                href={EVENT.registrationLink}
+                href={EVENT.ticketsLink}
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Inscreva-se agora
+                Comprar ingressos
               </Link>
             </Button>
 
