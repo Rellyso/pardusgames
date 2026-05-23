@@ -22,6 +22,8 @@ export const EVENT = {
   disclaimer:
     "https://drive.google.com/file/d/1oaDftV4a0CsVn4zXas0nIeUuN4J92NwB/view",
   ticketsLink: "https://outgo.com.br/pardus-games-2026",
+  penaltiesLink:
+    "https://drive.google.com/file/d/1zOoKq8uyOp41VUw1pqsps-0l_ly3gnFL/view?usp=drivesdk",
 } as const;
 
 export const IMPORTANT_DOCUMENTS = {
@@ -52,6 +54,12 @@ export const IMPORTANT_DOCUMENTS = {
       title: "Termo de responsabilidade do atleta",
       description: "Veja o PDF com o termo de responsabilidade do atleta.",
       href: EVENT.disclaimer,
+      cta: "Abrir PDF",
+    },
+    {
+      title: "Aditivo Penalidades",
+      description: "Veja o PDF com informações sobre as penalidades do evento.",
+      href: EVENT.penaltiesLink,
       cta: "Abrir PDF",
     },
     {
